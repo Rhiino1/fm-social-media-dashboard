@@ -4,11 +4,11 @@ function Header(props: { darkMode: boolean; toggleDarkMode: Function }) {
   return (
     <>
       <div className="z-10 flex flex-col items-start lg:flex-row">
-        <section className="flex flex-col items-start gap-3">
-          <h1 className="font-inter text-2xl font-bold text-[#1E202A] dark:text-white">
+        <section className="flex flex-col items-start gap-3 w-max">
+          <h1 className="font-inter text-2xl lg:text-4xl font-bold text-[#1E202A] dark:text-white">
             Social Media Dashboard
           </h1>
-          <p className="text-[#63687E] text-[14px] dark:text-[#8B97C6] font-bold font-inter">
+          <p className="text-[#63687E] text-[14px] lg:text-lg dark:text-[#8B97C6] font-bold font-inter">
             Total Followers: 23,004
           </p>
         </section>

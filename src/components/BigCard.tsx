@@ -14,7 +14,7 @@ function BigCard(props: {
   return (
     <>
       <section
-        className={`w-[326px] h-[216px] rounded-md rounded-b-md  ${social}`}
+        className={`w-[326px] h-[212px] rounded-md rounded-b-md  ${social}`}
       >
         <article className="dark:bg-[#252A41] dark:hover:bg-[#2C334E] w-[inherit] h-[212px] rounded-b-md grid grid-flow-row grid-rows-3 items-center justify-center hover:bg-[#E9EBF7] bg-[#F0F2FA]  mt-[4px]">
           <div className="flex items-center justify-center gap-2">

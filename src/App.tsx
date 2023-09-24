@@ -24,12 +24,12 @@ function App() {
   return (
     <>
       <div className="absolute top-0 w-full bg-[#F5F7FF] dark:bg-[#1F212E] h-96 rounded-b-xl transition-all duration-[400ms]"></div>
-      <div className="flex flex-col h-full w-full justify-between bg-white dark:bg-[#1E202A] gap-5 px-[26px] py-[41px] transition-all duration-[400ms]">
+      <div className="flex flex-col h-full w-full content-center justify-center bg-white dark:bg-[#1E202A] gap-5 px-[26px] py-[41px] transition-all duration-[400ms]">
         <Header
           darkMode={darkMode}
           toggleDarkMode={handleToggleDarkMode}
         ></Header>
-        <main className="z-10">
+        <main className="z-10 grid content-center justify-center ">
           <section className="grid w-full h-auto grid-cols-1 gap-6 mt-12 md:grid-cols-2 xl:grid-cols-4 auto-cols-fr">
             {bigCards.map((card, index) => {
               const { img, name, social, totalFollows, todayFollows, isUp } =
@@ -52,7 +52,7 @@ function App() {
               Overview - Today
             </h1>
           </section>
-          <section className="grid gap-6 mb-2 xl:grid-cols-4">
+          <section className="grid gap-6 mb-2 xl:grid-cols-4 md:grid-cols-2">
             {smallCards.map((card, index) => {
               const { img, title, todayFollows, percentageFollows, isUp } =
                 card;
