@@ -82,6 +82,8 @@ Grid, I know It's a wonderful tool, I'm trying to love the same way everyone doe
 
 - [Tailwindcss Documentation](https://tailwindcss.com/docs) - There is all the information and knowledge you need to start learning Tailwindcss.
 -[Create a gradient border with tailwindcss](https://www.dhairyashah.dev/posts/how-to-create-gradient-border-with-tailwind-css/) - Funny how we still need to have a div under another just to create a gradient border lol.
+-[Add dark mode toggle with react and tailwind](https://www.geeksforgeeks.org/how-to-add-dark-mode-in-reactjs-using-tailwind-css/) - Awesome explanation to create a toggle dark mode button.
+-[Peer base on sibling state](https://tailwindcss.com/docs/hover-focus-and-other-states#styling-based-on-sibling-state) - I'm starting to like tailwind, changing css classes base in a component state is so easy and SO COOL!
 
 ## Author
 

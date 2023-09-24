@@ -21,7 +21,7 @@ function App() {
   };
 
   return (
-    <div className="flex flex-col h-screen justify-between bg-white dark:bg-[#1E202A] gap-5 px-[26px] py-[41px]">
+    <div className="flex flex-col h-screen justify-between bg-white dark:bg-[#1E202A] gap-5 px-[26px] py-[41px] transition-all duration-[400ms]">
       <Header
         darkMode={darkMode}
         toggleDarkMode={handleToggleDarkMode}
