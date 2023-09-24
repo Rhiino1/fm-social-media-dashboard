@@ -3,7 +3,7 @@ import ToggleBtn from "@/components/ToggleBtn";
 function Header(props: { darkMode: boolean; toggleDarkMode: Function }) {
   return (
     <>
-      <div className="flex flex-col items-start">
+      <div className="flex flex-col items-start lg:flex-row">
         <section className="flex flex-col items-start gap-3">
           <h1 className="font-inter text-2xl font-bold text-[#1E202A]">
             Social Media Dashboard
@@ -12,8 +12,8 @@ function Header(props: { darkMode: boolean; toggleDarkMode: Function }) {
             Total Followers: 23,004
           </p>
         </section>
-        <hr className="w-full h-[2px] bg-[#63687E] mt-[27px]"></hr>
-        <section className="flex justify-between w-full mt-[22px]">
+        <hr className="lg:hidden w-full h-[2px] bg-[#63687E] mt-[27px]"></hr>
+        <section className="flex justify-end space-x-5 w-full mt-[22px]">
           <p className="text-[#63687E] text-[14px] font-bold font-inter">
             Dark Mode
           </p>
