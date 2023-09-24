@@ -28,7 +28,7 @@ function App() {
         toggleDarkMode={handleToggleDarkMode}
       ></Header>
       <main>
-        <section className="grid grid-cols-1 gap-6">
+        <section className="grid w-full h-auto grid-cols-1 gap-6 mt-12 md:grid-cols-2 xl:grid-cols-4 auto-cols-fr">
           {bigCards.map((card, index) => {
             const { img, name, social, totalFollows, todayFollows, isUp } =
               card;
@@ -45,8 +45,12 @@ function App() {
             );
           })}
         </section>
-        <section className="grid grid-cols-1 gap-6 mt-12 mb-2">
-          <h1 className="font-inter font-bold text-[#63687E] text-2xl">Overview - Today</h1>
+        <section className="mt-[51px] mb-6">
+          <h1 className="font-inter font-bold text-[#63687E] text-2xl">
+            Overview - Today
+          </h1>
+        </section>
+        <section className="grid gap-6 mb-2 xl:grid-cols-4">
           {smallCards.map((card, index) => {
             const { img, title, todayFollows, percentageFollows, isUp } = card;
             return (

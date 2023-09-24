@@ -11,7 +11,7 @@ function SmallCard(props: {
   const { img, title, todayFollows, percentageFollows, isUp } = props;
   return (
     <>
-      <section className="grid grid-cols-2 row-auto content-between rounded-md h-[125px] w-full bg-[#F0F2FA] py-[27px] px-[31px]">
+      <section className="grid grid-cols-2 row-auto content-between rounded-md w-[326px] h-[125px] bg-[#F0F2FA] py-[27px] px-[31px]">
         <h1 className="capitalize font-inter font-bold text-[#63687E] text-[14px]">
           {title}
         </h1>
