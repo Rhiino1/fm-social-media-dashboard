@@ -1,4 +1,6 @@
-function Header() {
+import ToggleBtn from "@/components/ToggleBtn";
+
+function Header(props: { darkMode: boolean; toggleDarkMode: Function }) {
   return (
     <>
       <div className="flex flex-col items-start">
@@ -12,8 +14,13 @@ function Header() {
         </section>
         <hr className="w-full h-[2px] bg-[#63687E] mt-[27px]"></hr>
         <section className="flex justify-between w-full mt-[22px]">
-          <p className="text-[#63687E] text-[14px] font-bold font-inter">Dark Mode</p>
-          <div><button>click me</button></div>
+          <p className="text-[#63687E] text-[14px] font-bold font-inter">
+            Dark Mode
+          </p>
+          <ToggleBtn
+            darkMode={props.darkMode}
+            toggleDarkMode={props.toggleDarkMode}
+          ></ToggleBtn>
         </section>
       </div>
     </>
