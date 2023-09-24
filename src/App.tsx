@@ -1,8 +1,9 @@
 import Footer from "@/layouts/Footer";
 import BigCard from "@/components/BigCard";
-import bigCards from "@/utils/BigCardData";
+import { bigCards, smallCards } from "@/utils/CardsData";
 import Header from "@/layouts/Header";
 import { useEffect, useState } from "react";
+import SmallCard from "@/components/SmallCard";
 
 function App() {
   const [darkMode, setDarkMode] = useState(localStorage.theme);
@@ -27,20 +28,39 @@ function App() {
         toggleDarkMode={handleToggleDarkMode}
       ></Header>
       <main>
-        {bigCards.map((card, index) => {
-          const { img, name, social, totalFollows, todayFollows, isUp } = card;
-          return (
-            <BigCard
-              key={index}
-              img={img}
-              name={name}
-              social={social}
-              totalFollows={totalFollows}
-              todayFollows={todayFollows}
-              isUp={isUp}
-            ></BigCard>
-          );
-        })}
+        <section className="grid grid-cols-1 gap-6">
+          {bigCards.map((card, index) => {
+            const { img, name, social, totalFollows, todayFollows, isUp } =
+              card;
+            return (
+              <BigCard
+                key={index}
+                img={img}
+                name={name}
+                social={social}
+                totalFollows={totalFollows}
+                todayFollows={todayFollows}
+                isUp={isUp}
+              ></BigCard>
+            );
+          })}
+        </section>
+        <section className="grid grid-cols-1 gap-6 mt-12 mb-2">
+          <h1 className="font-inter font-bold text-[#63687E] text-2xl">Overview - Today</h1>
+          {smallCards.map((card, index) => {
+            const { img, title, todayFollows, percentageFollows, isUp } = card;
+            return (
+              <SmallCard
+                key={index}
+                img={img}
+                title={title}
+                todayFollows={todayFollows}
+                percentageFollows={percentageFollows}
+                isUp={isUp}
+              ></SmallCard>
+            );
+          })}
+        </section>
         <Footer></Footer>
       </main>
     </div>

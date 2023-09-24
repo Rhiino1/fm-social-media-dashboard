@@ -14,7 +14,7 @@ function BigCard(props: {
   return (
     <>
       <section
-        className={`w-[326px] h-[216px] rounded-sm rounded-b-md  ${social}`}
+        className={`w-[326px] h-[216px] rounded-md rounded-b-md  ${social}`}
       >
         <article className="w-[inherit] h-[212px] rounded-b-md grid grid-flow-row grid-rows-3 items-center justify-center bg-[#F0F2FA]  mt-[4px]">
           <div className="flex items-center justify-center gap-2">
@@ -33,7 +33,7 @@ function BigCard(props: {
           </div>
           <div className="flex items-center justify-center gap-2">
             <img src={isUp ? upImg : downImg} alt="Up/Down icon" />
-            <p className="font-inter text-[14px] text-[#1DB489] font-bold">
+            <p className={`font-inter text-[14px] ${isUp ? 'text-[#1DB489]' : 'text-[#DC414C]'} font-bold`}>
               {todayFollows} Today
             </p>
           </div>
