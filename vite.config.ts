@@ -10,5 +10,5 @@ export default defineConfig({
       "@/": fileURLToPath(new URL('src/', import.meta.url))
     }
   },
-  base: "fm-news-homepage"
+  base: "fm-social-media-dashboard"
 })
