@@ -9,10 +9,8 @@ import useDarkMode from "@/utils/DarkMode";
 function App() {
   const [colorTheme, setTheme] = useDarkMode();
   const [darkMode, setDarkMode] = useState(
-    colorTheme === "light" ? true : false
+    colorTheme === "dark" ? false : true
   );
-
-  console.log("hola", darkMode, colorTheme);
 
   const handleToggleDarkMode = (checked: boolean) => {
     setTheme(colorTheme);
