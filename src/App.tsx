@@ -2,7 +2,7 @@ import Footer from "@/layouts/Footer";
 import BigCard from "@/components/BigCard";
 import { bigCards, smallCards } from "@/utils/CardsData";
 import Header from "@/layouts/Header";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import SmallCard from "@/components/SmallCard";
 import useDarkMode from "@/utils/DarkMode";
 
