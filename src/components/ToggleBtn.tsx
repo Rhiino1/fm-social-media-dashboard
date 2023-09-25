@@ -5,7 +5,7 @@ function ToggleBtn(props: { darkMode: boolean; toggleDarkMode: Function }) {
     <div
       className="relative inline-flex items-center cursor-pointer"
       onClick={() => {
-        toggleDarkMode();
+        toggleDarkMode(!darkMode);
       }}
     >
       <input
