@@ -4,21 +4,19 @@ import { bigCards, smallCards } from "@/utils/CardsData";
 import Header from "@/layouts/Header";
 import { useEffect, useState } from "react";
 import SmallCard from "@/components/SmallCard";
+import useDarkMode from "@/utils/DarkMode";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(localStorage.theme);
+  const [colorTheme, setTheme] = useDarkMode();
+  const [darkMode, setDarkMode] = useState(
+    colorTheme === "light" ? true : false
+  );
 
-  useEffect(() => {
-    const root = window.document.documentElement;
-    root.classList.remove(darkMode ? "light" : "dark");
-    root.classList.add(darkMode ? "dark" : "light");
-    localStorage.setItem("theme", darkMode);
-  }, [darkMode]);
+  console.log("hola", darkMode, colorTheme);
 
-  const handleToggleDarkMode = () => {
-    setDarkMode((value: boolean) => {
-      return !value;
-    });
+  const handleToggleDarkMode = (checked: boolean) => {
+    setTheme(colorTheme);
+    setDarkMode(checked);
   };
 
   return (
